@@ -12,7 +12,7 @@ public class OnlinePurchaseManager
   public int countElectronicsByMaker(String maker)
   {
     int count = 0; 
-    forEach(Gizmo g: purchases){
+    for(Gizmo g: purchases){
       if(g.isElectronic() && g.getMaker().equals(maker)){
         count++;
       }
